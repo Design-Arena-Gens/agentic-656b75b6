@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light;
+  --primary: #3498db;
+  --primary-hover: #2d86c2;
+  --secondary: #2ecc71;
+  --surface: #ffffff;
+  --surface-muted: #f5f7fb;
+  --ink: #1f2a37;
+  --ink-muted: #4b5563;
+  --border: #d5dde6;
+  --danger: #e74c3c;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-lg: 0 24px 60px rgba(21, 54, 92, 0.12);
+  --shadow-md: 0 12px 35px rgba(19, 41, 74, 0.12);
+  --shadow-sm: 0 6px 18px rgba(31, 53, 92, 0.1);
+  --font-sans: var(--font-geist-sans), "Inter", "Segoe UI", -apple-system,
+    BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), "JetBrains Mono", "Fira Code", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--surface-muted);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+#__next,
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
